@@ -12,37 +12,36 @@ class Ncurses : public Graphic {
 private:
 	char 	_head;
 	char	_food;
+	char	_body;
 
 public:
 	WINDOW  *mainWin;
 	WINDOW  *playWin;
 
-
 	Ncurses();
 	~Ncurses();
 
-
-	void    drawFrame() override
+	void    drawFrame(int height, int width) override
 	{
 		int x = 0;
 		int y = 0;
 
-		while (x < GAME_HEIGHT)
+		while (x < height)
 		{
 			move(x, 0);
 			printw("#");
 			refresh();
-			move(x, GAME_WIDTH);
+			move(x, width);
 			printw("#");
 			refresh();
 			x++;
 		}
-		while (y < GAME_WIDTH)
+		while (y <= width)
 		{
 			move(0, y);
 			printw("#");
 			refresh();
-			move(GAME_HEIGHT, y);
+			move(height, y);
 			printw("#");
 			refresh();
 			y++;
@@ -56,7 +55,7 @@ public:
 		while (x != GAME_HEIGHT)
 		{
 			int y = 1;
-			while (y != GAME_WEIGHT)
+			while (y != GAME_WIDTH)
 			{
 				move(x, y);
 				printw(" ");
@@ -69,27 +68,32 @@ public:
 	void	createGameArea() override
 	{
 		playWin = subwin(mainWin, GAME_HEIGHT, GAME_WIDTH, 0, 0);
-		drawFrame();
+		drawFrame(GAME_HEIGHT, GAME_WIDTH);
 	}
 
 	void	createMainWin() override
 	{
 		mainWin = newwin(WIN_HEIGHT, WIN_WIDTH, 0, 0);
-		drawFrame();
+		drawFrame(WIN_HEIGHT, WIN_WIDTH);
 	}
 
 	void	printShake(Shake shake) override
 	{
-		std::list <Pixel*>::iterator	_i;
+		int j = 0;
 
-		for (_i = shake.getShake().begin(); _i != shake.getShake().end(); _i++)
-		{
-			move((*_i)->get_x(), (*_i)->get_y());
-			if (_i == shake.getShake().begin())
+		for (Pixel *pixel: shake.getShake()) {
+			if (j == 0)
+			{
+				move(pixel->get_x(), pixel->get_y() );
 				printw("%c", _head);
-			else
-				printw("=");
-			refresh();
+				refresh();
+				j++;
+			}
+			else {
+				move(pixel->get_x(), pixel->get_y());
+				printw("%c", _body);
+				refresh();
+			}
 		}
 	}
 

@@ -48,7 +48,7 @@ int Pixel::get_x()
 bool 		Pixel::checkFoodColision(Shake shake)
 {
 	if (!shake.checkCoordinates(get_x(), get_y(), 0) || \
-		get_x() < 0 && get_x() > GAME_HEIGHT && get_y() < 0 && get_y() > GAME_WEIGHT)
+		get_x() < 0 && get_x() > GAME_HEIGHT && get_y() < 0 && get_y() > GAME_WIDTH)
 		return (true);
 	return (false);
 }
@@ -60,7 +60,7 @@ bool     Pixel::generateFood(Shake shake)
 		while (checkFoodColision(shake))
 		{
 			set_x(std::rand() % GAME_HEIGHT + 1);
-			set_y(std::rand() % GAME_WEIGHT + 1);
+			set_y(std::rand() % GAME_WIDTH + 1);
 		}
 		shake.setCountEaten(shake.getCountEaten() + 1);
 		if (!shake.getCountEaten() % 5)

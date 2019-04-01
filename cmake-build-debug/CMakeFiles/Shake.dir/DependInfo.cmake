@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/starscatcher/Desktop/projects/Shake/Graphic.cpp" "/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles/Shake.dir/Graphic.cpp.o"
   "/home/starscatcher/Desktop/projects/Shake/Ncurses.cpp" "/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles/Shake.dir/Ncurses.cpp.o"
   "/home/starscatcher/Desktop/projects/Shake/Shake.cpp" "/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles/Shake.dir/Shake.cpp.o"
-  "/home/starscatcher/Desktop/projects/Shake/gameWin.cpp" "/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles/Shake.dir/gameWin.cpp.o"
   "/home/starscatcher/Desktop/projects/Shake/main.cpp" "/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles/Shake.dir/main.cpp.o"
   "/home/starscatcher/Desktop/projects/Shake/pixel.cpp" "/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles/Shake.dir/pixel.cpp.o"
   )

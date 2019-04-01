@@ -12,7 +12,6 @@ class Shake
 {
     private:
 		std::list <Pixel*> 				_shake;
-		std::list <Pixel*>::iterator	_i;
 		bool                       		_eaten;
 		unsigned long					_speed;
 		unsigned int 					_countEaten;

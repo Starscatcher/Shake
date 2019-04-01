@@ -9,9 +9,7 @@ Shake::Shake()
     _countEaten = 0;
     _eaten = 0;
     for (int i = 0; i < START_SHAKE_LEN; ++i)
-        _shake.push_back(new Pixel(GAME_HEIGHT/2, GAME_WEIGHT/2+i));
-    _i = _shake.begin();
-
+        _shake.push_back(new Pixel(GAME_HEIGHT/2, GAME_WIDTH/2+i));
 }
 
 void    Shake::setSpeed(unsigned long speed)
@@ -62,7 +60,7 @@ void    Shake::push_front(int x, int y)
 int     Shake::checkFrontCoordinates()
 {
     if (_shake.front()->get_x() > 0 && _shake.front()->get_x() < GAME_HEIGHT \
-        && _shake.front()->get_y() > 0 && _shake.front()->get_y() < GAME_WEIGHT)
+        && _shake.front()->get_y() > 0 && _shake.front()->get_y() < GAME_WIDTH)
         return (1);
     else
         return (0);
@@ -70,14 +68,14 @@ int     Shake::checkFrontCoordinates()
 
 int     Shake::checkCoordinates(int x, int y, int from)
 {
-    for (_i = _shake.begin(); _i != _shake.end(); ++_i)
+	for (Pixel *pixel : _shake)
     {
         if (from)
         {
-            ++_i;
             from = 0;
+			continue;
         }
-        if ((*_i)->get_x() == x && (*_i)->get_y() == y)
+        if (pixel->get_x() == x && pixel->get_y() == y)
             return (0);
     }
     return (1);
@@ -87,8 +85,8 @@ int		Shake::checkCollision()
 {
 	if (!checkFrontCoordinates())
 		return (0);
-	if (!checkCoordinates(_shake.front()->get_x(), _shake.front()->get_y(), 1))
-		return (0);
+	//if (!checkCoordinates(_shake.front()->get_x(), _shake.front()->get_y(), 0))
+		//return (0);
 }
 
 void    Shake::moveUp()

@@ -57,22 +57,9 @@ include CMakeFiles/Shake.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Shake.dir/flags.make
 
-CMakeFiles/Shake.dir/gameWin.cpp.o: CMakeFiles/Shake.dir/flags.make
-CMakeFiles/Shake.dir/gameWin.cpp.o: ../gameWin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Shake.dir/gameWin.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Shake.dir/gameWin.cpp.o -c /home/starscatcher/Desktop/projects/Shake/gameWin.cpp
-
-CMakeFiles/Shake.dir/gameWin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Shake.dir/gameWin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/starscatcher/Desktop/projects/Shake/gameWin.cpp > CMakeFiles/Shake.dir/gameWin.cpp.i
-
-CMakeFiles/Shake.dir/gameWin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Shake.dir/gameWin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/starscatcher/Desktop/projects/Shake/gameWin.cpp -o CMakeFiles/Shake.dir/gameWin.cpp.s
-
 CMakeFiles/Shake.dir/main.cpp.o: CMakeFiles/Shake.dir/flags.make
 CMakeFiles/Shake.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Shake.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Shake.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Shake.dir/main.cpp.o -c /home/starscatcher/Desktop/projects/Shake/main.cpp
 
 CMakeFiles/Shake.dir/main.cpp.i: cmake_force
@@ -85,7 +72,7 @@ CMakeFiles/Shake.dir/main.cpp.s: cmake_force
 
 CMakeFiles/Shake.dir/pixel.cpp.o: CMakeFiles/Shake.dir/flags.make
 CMakeFiles/Shake.dir/pixel.cpp.o: ../pixel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Shake.dir/pixel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Shake.dir/pixel.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Shake.dir/pixel.cpp.o -c /home/starscatcher/Desktop/projects/Shake/pixel.cpp
 
 CMakeFiles/Shake.dir/pixel.cpp.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/Shake.dir/pixel.cpp.s: cmake_force
 
 CMakeFiles/Shake.dir/Shake.cpp.o: CMakeFiles/Shake.dir/flags.make
 CMakeFiles/Shake.dir/Shake.cpp.o: ../Shake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Shake.dir/Shake.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Shake.dir/Shake.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Shake.dir/Shake.cpp.o -c /home/starscatcher/Desktop/projects/Shake/Shake.cpp
 
 CMakeFiles/Shake.dir/Shake.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/Shake.dir/Shake.cpp.s: cmake_force
 
 CMakeFiles/Shake.dir/Game.cpp.o: CMakeFiles/Shake.dir/flags.make
 CMakeFiles/Shake.dir/Game.cpp.o: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Shake.dir/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Shake.dir/Game.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Shake.dir/Game.cpp.o -c /home/starscatcher/Desktop/projects/Shake/Game.cpp
 
 CMakeFiles/Shake.dir/Game.cpp.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/Shake.dir/Game.cpp.s: cmake_force
 
 CMakeFiles/Shake.dir/Graphic.cpp.o: CMakeFiles/Shake.dir/flags.make
 CMakeFiles/Shake.dir/Graphic.cpp.o: ../Graphic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Shake.dir/Graphic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Shake.dir/Graphic.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Shake.dir/Graphic.cpp.o -c /home/starscatcher/Desktop/projects/Shake/Graphic.cpp
 
 CMakeFiles/Shake.dir/Graphic.cpp.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/Shake.dir/Graphic.cpp.s: cmake_force
 
 CMakeFiles/Shake.dir/Ncurses.cpp.o: CMakeFiles/Shake.dir/flags.make
 CMakeFiles/Shake.dir/Ncurses.cpp.o: ../Ncurses.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Shake.dir/Ncurses.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Shake.dir/Ncurses.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Shake.dir/Ncurses.cpp.o -c /home/starscatcher/Desktop/projects/Shake/Ncurses.cpp
 
 CMakeFiles/Shake.dir/Ncurses.cpp.i: cmake_force
@@ -150,7 +137,6 @@ CMakeFiles/Shake.dir/Ncurses.cpp.s: cmake_force
 
 # Object files for target Shake
 Shake_OBJECTS = \
-"CMakeFiles/Shake.dir/gameWin.cpp.o" \
 "CMakeFiles/Shake.dir/main.cpp.o" \
 "CMakeFiles/Shake.dir/pixel.cpp.o" \
 "CMakeFiles/Shake.dir/Shake.cpp.o" \
@@ -161,7 +147,6 @@ Shake_OBJECTS = \
 # External object files for target Shake
 Shake_EXTERNAL_OBJECTS =
 
-Shake: CMakeFiles/Shake.dir/gameWin.cpp.o
 Shake: CMakeFiles/Shake.dir/main.cpp.o
 Shake: CMakeFiles/Shake.dir/pixel.cpp.o
 Shake: CMakeFiles/Shake.dir/Shake.cpp.o
@@ -170,7 +155,7 @@ Shake: CMakeFiles/Shake.dir/Graphic.cpp.o
 Shake: CMakeFiles/Shake.dir/Ncurses.cpp.o
 Shake: CMakeFiles/Shake.dir/build.make
 Shake: CMakeFiles/Shake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Shake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Shake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Shake.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

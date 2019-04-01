@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Shake.dir/gameWin.cpp.o"
   "CMakeFiles/Shake.dir/main.cpp.o"
   "CMakeFiles/Shake.dir/pixel.cpp.o"
   "CMakeFiles/Shake.dir/Shake.cpp.o"

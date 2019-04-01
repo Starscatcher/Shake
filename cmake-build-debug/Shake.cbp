@@ -113,12 +113,6 @@
 		<Unit filename="/home/starscatcher/Desktop/projects/Shake/constant.h">
 			<Option target="Shake"/>
 		</Unit>
-		<Unit filename="/home/starscatcher/Desktop/projects/Shake/gameWin.cpp">
-			<Option target="Shake"/>
-		</Unit>
-		<Unit filename="/home/starscatcher/Desktop/projects/Shake/gameWin.h">
-			<Option target="Shake"/>
-		</Unit>
 		<Unit filename="/home/starscatcher/Desktop/projects/Shake/main.cpp">
 			<Option target="Shake"/>
 		</Unit>

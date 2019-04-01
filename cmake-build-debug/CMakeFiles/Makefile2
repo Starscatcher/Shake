@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/starscatcher/Desktop/projects/Shake/cmake-build-debug
 CMakeFiles/Shake.dir/all:
 	$(MAKE) -f CMakeFiles/Shake.dir/build.make CMakeFiles/Shake.dir/depend
 	$(MAKE) -f CMakeFiles/Shake.dir/build.make CMakeFiles/Shake.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Shake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Shake"
 .PHONY : CMakeFiles/Shake.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/Shake.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Shake.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Shake.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Shake.dir/rule

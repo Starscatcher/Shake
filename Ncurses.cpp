@@ -8,6 +8,7 @@ Ncurses::Ncurses()
 	curs_set(0);
 	_head = '<';
 	_food = '*';
+	_body = 'o';
 }
 
 Ncurses::~Ncurses()

@@ -231,33 +231,6 @@ Shake.cpp.s:
 	$(MAKE) -f CMakeFiles/Shake.dir/build.make CMakeFiles/Shake.dir/Shake.cpp.s
 .PHONY : Shake.cpp.s
 
-gameWin.o: gameWin.cpp.o
-
-.PHONY : gameWin.o
-
-# target to build an object file
-gameWin.cpp.o:
-	$(MAKE) -f CMakeFiles/Shake.dir/build.make CMakeFiles/Shake.dir/gameWin.cpp.o
-.PHONY : gameWin.cpp.o
-
-gameWin.i: gameWin.cpp.i
-
-.PHONY : gameWin.i
-
-# target to preprocess a source file
-gameWin.cpp.i:
-	$(MAKE) -f CMakeFiles/Shake.dir/build.make CMakeFiles/Shake.dir/gameWin.cpp.i
-.PHONY : gameWin.cpp.i
-
-gameWin.s: gameWin.cpp.s
-
-.PHONY : gameWin.s
-
-# target to generate assembly for a file
-gameWin.cpp.s:
-	$(MAKE) -f CMakeFiles/Shake.dir/build.make CMakeFiles/Shake.dir/gameWin.cpp.s
-.PHONY : gameWin.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -333,9 +306,6 @@ help:
 	@echo "... Shake.o"
 	@echo "... Shake.i"
 	@echo "... Shake.s"
-	@echo "... gameWin.o"
-	@echo "... gameWin.i"
-	@echo "... gameWin.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

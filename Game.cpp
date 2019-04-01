@@ -26,7 +26,8 @@ void    Game::start()
 	std::srand(clock());
 	nodelay(stdscr, TRUE); // for getch
 
-	while (key != EXIT)
+	long k = 0;
+	while (1)
 	{
 		if (Shake.setEaten(Food.generateFood(Shake)))
 			_score += SCORE_INCREASE;
@@ -42,30 +43,27 @@ void    Game::start()
 			key = temp;
 		if (key != PAUSE)
 			temp = key;
-
-		if (key == UP) {
-			Shake.moveUp();
-			Ncurses.changeHeadDirection(UP);
+		if (k % 50 == 0) {
+			if (key == UP) {
+				Shake.moveUp();
+				Ncurses.changeHeadDirection(UP);
+			} else if (key == DOWN) {
+				Shake.moveDown();
+				Ncurses.changeHeadDirection(DOWN);
+			} else if (key == RIGHT) {
+				Shake.moveRight();
+				Ncurses.changeHeadDirection(RIGHT);
+			} else if (key == LEFT) {
+				Shake.moveLeft();
+				Ncurses.changeHeadDirection(LEFT);
+			} else if (key == PAUSE) {
+				pause();
+				key = temp;
+			}
 		}
-		else if (key == DOWN) {
-			Shake.moveDown();
-			Ncurses.changeHeadDirection(DOWN);
-		}
-		else if (key == RIGHT) {
-			Shake.moveRight();
-			Ncurses.changeHeadDirection(RIGHT);
-		}
-		else if (key == LEFT) {
-			Shake.moveLeft();
-			Ncurses.changeHeadDirection(LEFT);
-		}
-		else if (key == PAUSE) {
-			pause();
-			key = temp;
-		}
-
+		k++;
 		if (!Shake.checkCollision())
-			key = EXIT;
-		usleep(Shake.getSpeed());
+			break;
+		usleep(START_SHAKE_SPEED);
 	}
 }
