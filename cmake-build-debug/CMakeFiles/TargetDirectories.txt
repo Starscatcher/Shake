@@ -1,0 +1,3 @@
+/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles/Shake.dir
+/home/starscatcher/Desktop/projects/Shake/cmake-build-debug/CMakeFiles/edit_cache.dir

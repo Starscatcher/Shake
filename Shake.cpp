@@ -1,14 +1,37 @@
 #include "Shake.h"
 
 //using namespace std;
+#include "Game.h"
 
 Shake::Shake()
 {
+    _speed = START_SHAKE_SPEED;
+    _countEaten = 0;
+    _eaten = 0;
     for (int i = 0; i < START_SHAKE_LEN; ++i)
-    {
-        shake.push_back(new Pixel(GAME_HEIGHT/2, GAME_WEIGHT/2+i));
-    }
-    _i = shake.begin();
+        _shake.push_back(new Pixel(GAME_HEIGHT/2, GAME_WEIGHT/2+i));
+    _i = _shake.begin();
+
+}
+
+void    Shake::setSpeed(unsigned long speed)
+{
+	_speed = speed;
+}
+
+unsigned long    Shake::getSpeed()
+{
+	return (_speed);
+}
+
+void    Shake::setCountEaten(unsigned int countEaten)
+{
+	_countEaten = countEaten;
+}
+
+unsigned int    Shake::getCountEaten()
+{
+	return (_countEaten);
 }
 
 Shake::~Shake()
@@ -16,30 +39,30 @@ Shake::~Shake()
 
 }
 
-void    Shake::set_shake(std::list <Pixel*> newShake)
+void    Shake::setShake(std::list <Pixel*> newShake)
 {
-    shake = newShake;
+    _shake = newShake;
 }
 
-std::list<Pixel*>    Shake::get_shake()
+std::list<Pixel*>    Shake::getShake()
 {
-    return (shake);
+    return (_shake);
 }
 
 void    Shake::pop_back()
 {
-    shake.pop_back();
+    _shake.pop_back();
 }
 
 void    Shake::push_front(int x, int y)
 {
-    shake.push_front(new Pixel(shake.front()->get_x() + x, shake.front()->get_y() + y));
+    _shake.push_front(new Pixel(_shake.front()->get_x() + x, _shake.front()->get_y() + y));
 }
 
 int     Shake::checkFrontCoordinates()
 {
-    if (shake.front()->get_x() > 0 && shake.front()->get_x() < GAME_HEIGHT \
-        && shake.front()->get_y()  > 0 && shake.front()->get_y() < GAME_WEIGHT)
+    if (_shake.front()->get_x() > 0 && _shake.front()->get_x() < GAME_HEIGHT \
+        && _shake.front()->get_y() > 0 && _shake.front()->get_y() < GAME_WEIGHT)
         return (1);
     else
         return (0);
@@ -47,7 +70,7 @@ int     Shake::checkFrontCoordinates()
 
 int     Shake::checkCoordinates(int x, int y, int from)
 {
-    for (_i = shake.begin(); _i != shake.end(); ++_i)
+    for (_i = _shake.begin(); _i != _shake.end(); ++_i)
     {
         if (from)
         {
@@ -60,15 +83,50 @@ int     Shake::checkCoordinates(int x, int y, int from)
     return (1);
 }
 
-void    Shake::printShake()
+int		Shake::checkCollision()
 {
-    for (_i = shake.begin(); _i != shake.end(); _i++)
-    {
-        move((*_i)->get_x(), (*_i)->get_y());
-        if (_i == shake.begin())
-            printw("<");
-        else
-            printw("=");
-        refresh();
-    }
+	if (!checkFrontCoordinates())
+		return (0);
+	if (!checkCoordinates(_shake.front()->get_x(), _shake.front()->get_y(), 1))
+		return (0);
+}
+
+void    Shake::moveUp()
+{
+    push_front(-1, 0);
+    if (!_eaten)
+        _shake.pop_back();
+}
+
+void    Shake::moveDown()
+{
+    push_front(1, 0);
+    if (!_eaten)
+        _shake.pop_back();
+}
+
+void    Shake::moveRight()
+{
+    push_front(0, 1);
+    if (!_eaten)
+        _shake.pop_back();
+}
+
+void    Shake::moveLeft()
+{
+    push_front(0, -1);
+    if (!_eaten)
+        _shake.pop_back();
+}
+
+
+bool    Shake::setEaten(bool eaten)
+{
+    _eaten = eaten;
+    return (_eaten);
+}
+
+bool    Shake::getEaten()
+{
+    return (_eaten);
 }

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Shake.dir/gameWin.cpp.o CMakeFiles/Shake.dir/main.cpp.o CMakeFiles/Shake.dir/pixel.cpp.o CMakeFiles/Shake.dir/Shake.cpp.o CMakeFiles/Shake.dir/Game.cpp.o CMakeFiles/Shake.dir/Graphic.cpp.o CMakeFiles/Shake.dir/Ncurses.cpp.o  -o Shake 
