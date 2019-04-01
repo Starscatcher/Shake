@@ -24,7 +24,6 @@
 
 
 #include "ncurses.h"
-#include "gameWin.h"
 #include "pixel.h"
 #include "Shake.h"
 #include "random"

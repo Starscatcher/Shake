@@ -7,8 +7,6 @@ include_directories(.)
 
 add_executable(Shake
         constant.h
-        gameWin.cpp
-        gameWin.h
         main.cpp
         pixel.cpp
         pixel.h
