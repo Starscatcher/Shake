@@ -1,4 +1,3 @@
-#include "Graphic.h"
 #include "Game.h"
 
 int main(int ac, char **av)

@@ -92,6 +92,9 @@
 		<Unit filename="/home/starscatcher/Desktop/projects/Shake/Game.h">
 			<Option target="Shake"/>
 		</Unit>
+		<Unit filename="/home/starscatcher/Desktop/projects/Shake/GameConstants.h">
+			<Option target="Shake"/>
+		</Unit>
 		<Unit filename="/home/starscatcher/Desktop/projects/Shake/Graphic.cpp">
 			<Option target="Shake"/>
 		</Unit>
@@ -108,9 +111,6 @@
 			<Option target="Shake"/>
 		</Unit>
 		<Unit filename="/home/starscatcher/Desktop/projects/Shake/Shake.h">
-			<Option target="Shake"/>
-		</Unit>
-		<Unit filename="/home/starscatcher/Desktop/projects/Shake/constant.h">
 			<Option target="Shake"/>
 		</Unit>
 		<Unit filename="/home/starscatcher/Desktop/projects/Shake/main.cpp">

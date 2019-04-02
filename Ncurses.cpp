@@ -17,6 +17,3 @@ Ncurses::~Ncurses()
 	delwin(playWin);
 	endwin();
 }
-
-
-

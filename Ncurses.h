@@ -1,10 +1,13 @@
 #ifndef NCURSES_H
 #define NCURSES_H
 
-#include "Graphic.h"
 #include <ncurses.h>
-#include "Game.h"
+
+#include "Graphic.h"
 #include "Shake.h"
+#include "Pixel.h"
+
+#include "GameConstants.h"
 
 
 class Ncurses : public Graphic {
@@ -46,6 +49,13 @@ public:
 			refresh();
 			y++;
 		}
+	}
+
+	void    printMenu(unsigned int score) override
+	{
+		move(20, 95);
+		printw("SCORE: %d", score);
+		refresh();
 	}
 
 	void    clearWin() override
@@ -101,6 +111,7 @@ public:
 	{
 		move(Food.get_x(), Food.get_y());
 		printw("%c", _food);
+		refresh();
 	}
 
 	void    changeHeadDirection(int direction) override {
