@@ -4,14 +4,11 @@
 #include <cstdlib>
 
 #include "Shake.h"
-
 #include "GameConstants.h"
-
 
 class Shake;
 
-class Pixel
-{
+class Pixel {
 	private:
 		int _x;
 		int _y;
@@ -24,7 +21,6 @@ class Pixel
     	int		get_y();
     	void	set_x(int x);
     	void	set_y(int y);
-
 
 		void	generateFood(Shake shake);
 		bool  	checkFoodColision(Shake shake);

@@ -6,14 +6,12 @@
 
 #include "GameConstants.h"
 
-
 class Shake;
 class Pixel;
 
 class Graphic {
 
 public:
-
 	Graphic(){}
 
 	virtual void    drawFrame(int height, int width) = 0;
@@ -27,6 +25,5 @@ public:
 	virtual ~Graphic(void) {}
 
 };
-
 
 #endif

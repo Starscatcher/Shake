@@ -1,7 +1,6 @@
 #include "Ncurses.h"
 
-Ncurses::Ncurses()
-{
+Ncurses::Ncurses() {
 	initscr();
 	createMainWin();
 	createGameArea();
@@ -11,8 +10,7 @@ Ncurses::Ncurses()
 	_body = 'o';
 }
 
-Ncurses::~Ncurses()
-{
+Ncurses::~Ncurses() {
 	delwin(mainWin);
 	delwin(playWin);
 	endwin();

@@ -1,7 +1,6 @@
 #include "Game.h"
 
-int main(int ac, char **av)
-{
+int main(int ac, char **av) {
 	Game	Game;
 
     Game.start();

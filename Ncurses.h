@@ -11,7 +11,6 @@
 
 
 class Ncurses : public Graphic {
-
 private:
 	char 	_head;
 	char	_food;
@@ -24,13 +23,11 @@ public:
 	Ncurses();
 	~Ncurses();
 
-	void    drawFrame(int height, int width) override
-	{
+	void    drawFrame(int height, int width) {
 		int x = 0;
 		int y = 0;
 
-		while (x < height)
-		{
+		while (x < height) {
 			move(x, 0);
 			printw("#");
 			refresh();
@@ -39,8 +36,7 @@ public:
 			refresh();
 			x++;
 		}
-		while (y <= width)
-		{
+		while (y <= width) {
 			move(0, y);
 			printw("#");
 			refresh();
@@ -51,22 +47,18 @@ public:
 		}
 	}
 
-	void    printMenu(unsigned int score) override
-	{
+	void    printMenu(unsigned int score) {
 		move(20, 95);
 		printw("SCORE: %d", score);
 		refresh();
 	}
 
-	void    clearWin() override
-	{
+	void    clearWin() {
 		int x = 1;
 
-		while (x != GAME_HEIGHT)
-		{
+		while (x != GAME_HEIGHT) {
 			int y = 1;
-			while (y != GAME_WIDTH)
-			{
+			while (y != GAME_WIDTH) {
 				move(x, y);
 				printw(" ");
 				y++;
@@ -75,25 +67,21 @@ public:
 		}
 	}
 
-	void	createGameArea() override
-	{
+	void	createGameArea() {
 		playWin = subwin(mainWin, GAME_HEIGHT, GAME_WIDTH, 0, 0);
 		drawFrame(GAME_HEIGHT, GAME_WIDTH);
 	}
 
-	void	createMainWin() override
-	{
+	void	createMainWin() {
 		mainWin = newwin(WIN_HEIGHT, WIN_WIDTH, 0, 0);
 		drawFrame(WIN_HEIGHT, WIN_WIDTH);
 	}
 
-	void	printShake(Shake shake) override
-	{
+	void	printShake(Shake shake) {
 		int j = 0;
 
 		for (Pixel *pixel: shake.getShake()) {
-			if (j == 0)
-			{
+			if (j == 0) {
 				move(pixel->get_x(), pixel->get_y() );
 				printw("%c", _head);
 				refresh();
@@ -107,18 +95,17 @@ public:
 		}
 	}
 
-	void    printFood(Pixel Food) override
-	{
+	void    printFood(Pixel Food) {
 		move(Food.get_x(), Food.get_y());
 		printw("%c", _food);
 		refresh();
 	}
 
-	void    changeHeadDirection(int direction) override {
+	void    changeHeadDirection(int direction) {
 		if (direction == UP)
 			this->_head = '^';
 		else if (direction == DOWN)
-			this->_head = 'o';
+			this->_head = 'v';
 		else if (direction == RIGHT)
 			this->_head = '>';
 		else if (direction == LEFT)

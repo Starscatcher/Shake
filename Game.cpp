@@ -1,22 +1,18 @@
 #include "Game.h"
 
-Game::Game()
-{
+Game::Game() {
 	_score = 0;
 }
 
 Game::~Game()
 {}
 
-
-void 	Game::pause()
-{
+void 	Game::pause() {
 	while (getch() != RESUME)
 		;
 }
 
-void    Game::start()
-{
+void    Game::start() {
 	Pixel 	Food(5, 5);
 	Shake	Shake;
 	int 	key = LEFT;
@@ -27,10 +23,8 @@ void    Game::start()
 	nodelay(stdscr, TRUE); // for getch
 
 	long k = 0;
-	while (key != EXIT)
-	{
-		if (Shake.checkCollisionWithFood(Food.get_x(), Food.get_y()))
-		{
+	while (key != EXIT) {
+		if (Shake.checkCollisionWithFood(Food.get_x(), Food.get_y())) {
 			_score += SCORE_INCREASE;
 			Shake.eat();
 			Food.generateFood(Shake);
